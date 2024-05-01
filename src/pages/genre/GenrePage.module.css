@@ -1,0 +1,117 @@
+.page{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  font-family: 'DM Sans',sans-serif;
+}
+.leftHeader{
+  font-size: 2.5rem;
+  color: #72DB73;
+  font-family: "Single Day", cursive;
+}
+.leftSubHeader{
+  color: white;
+  font-size: 3.5rem;
+  font-family: 'DM Sans' ,sans-serif;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 5%;
+}
+.selected{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  cursor: pointer;
+}
+.selectedGenre{
+  width: 7rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin:8px 8px;
+  color: white;
+  background-color: #148A08;
+  flex: 0 0 calc(33.33%-60px);
+}
+.selectedGenre button{
+  font-size: large;
+  background-color: transparent;
+  border: none;
+  color: darkgreen;
+}
+.warning{
+  display: flex;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  align-items: center;
+  color: #FF0000;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height: 100%;
+}
+.genreGrid{
+  height: 70%;
+  width:70%;
+ display: grid;
+ grid-template-columns: repeat(3,1fr); 
+ margin-top: 8%;
+ cursor: pointer;
+}
+.genreCard{
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  border-radius: 12px;
+  color: white;
+}
+
+.genreCard .title{
+  font-size: 1.2rem;
+  padding: 8px 0px;
+  width: 100%;
+  align-self: flex-start;
+  margin-left: 10%;
+}
+.genreCard img{
+  object-fit: cover;
+  height: 60%;
+}
+/* .button{
+  position: fixed;
+  bottom: 40px;
+  align-self: flex-end;
+  margin-right: 8vw;
+  font-family: 'DM Sans',sans-serif;
+  border-radius: 20px;
+  background-color: #148A08;
+  color: white;
+  border: none;
+  padding: 10px 55px;
+} */
+.NextButton{
+  all: unset;
+  margin-top: 70px;
+  margin-left: 400px;
+  background-color: #72DB73;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-family: 'DM Sans',sans-serif;
+  border-radius: 20px;
+  cursor: pointer;
+}

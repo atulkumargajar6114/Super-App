@@ -1,0 +1,34 @@
+
+.NotesWidget{
+  padding: 15px;
+}
+
+.header{
+  font-family: 'DM Sans',sans-serif;
+}
+.input{
+  display: flex;
+  font-size: 1.5rem;
+  background: transparent;
+  font-family: 'DM Sans',sans-serif;
+  border: none;
+  height: 300px;
+  width: 100%;
+  resize: none;
+}
+.input:focus{
+  outline: none;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background: #FFE6A6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: black;
+}

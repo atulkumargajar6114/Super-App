@@ -1,0 +1,75 @@
+.page{
+  background-color:white;
+  width: 100%;
+  height: 100vh;
+}
+.container {  
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2.1fr 0.1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "user-widget notes-widget news-widget"
+    "user-widget notes-widget news-widget"
+    "weather-widget notes-widget news-widget"
+    "timer-widget timer-widget news-widget"
+    ". . .";
+}
+
+.userWidget{ 
+  border-radius: 20px;
+  height: inherit;
+  width: inherit;
+  background-color: #5746EA;
+  grid-area: user-widget; 
+}
+
+.weatherWidget{ 
+  width: inherit;
+  height: inherit;
+  background-color: #FF4ADE;
+  grid-area: weather-widget; 
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.timerWidget { 
+  width: inherit;
+  height: inherit;
+  background-color: #1E2343;
+  grid-area: timer-widget; 
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.notesWidget { 
+  width: inherit;
+  height: inherit;
+  background-color: #F1C75B;
+  grid-area: notes-widget; 
+  border-radius: 20px;
+}
+
+.newsWidget { 
+  width: inherit;
+  height: 100%;
+  background-color: aqua;
+  grid-area: news-widget; 
+  border-radius: 30px;
+}
+.NextButton{
+  all: unset;
+  background-color: #72DB73;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-family: 'DM Sans',sans-serif;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

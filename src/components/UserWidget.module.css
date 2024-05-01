@@ -1,0 +1,46 @@
+.userWidget{
+  display: flex;
+  box-sizing: border-box;
+  justify-content:space-between;
+  margin-bottom: 1.5%;
+  padding: 30px 50px;
+  height: 65%;
+  color: white;
+  background-color: #5746EA;
+  border-radius: 30px;
+}
+
+.userWidget h3{
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 0.5;
+}
+
+.userWidget h1{
+  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.5;
+}
+
+.userWidget img{
+  height: 100%;
+}
+
+.userWidget div{
+  margin-right: 16px;
+}
+ 
+.genreGrid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pill{
+  width: 20%;
+  flex: 0 0 calc(50%-70px);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #9F94FF;
+}
