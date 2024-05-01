@@ -26,6 +26,7 @@ const Registration = () => {
     }else{
       const currentUser={name,username,email,mobile}
       localStorage.setItem("currentUser",JSON.stringify(currentUser));
+      navigate('/genre')
       setName('');
       setUserName('');
       setEmail('');
